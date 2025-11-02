@@ -20,6 +20,19 @@ Asegúrate de tener Go instalado (versión 1.18 o superior). Puedes instalar `nx
 go install github.com/soyunomas/nxsh@latest
 ```
 
+***Nota:*** *El comando anterior compilará e instalará el binario `nxsh` en el directorio de binarios de Go (normalmente en `$HOME/go/bin`). Puedes ejecutar el programa directamente usando su ruta completa:*
+
+```bash
+~/go/bin/nxsh
+```
+
+*Para poder invocarlo de forma más cómoda (escribiendo solo `nxsh`), puedes añadir su directorio a la variable de entorno `$PATH` de tu sistema. Para hacerlo de forma permanente, ejecuta:*
+
+```bash
+echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.bashrc && source ~/.bashrc
+```
+*(Si usas Zsh, reemplaza `~/.bashrc` por `~/.zshrc`)*.
+
 O clona el repositorio y compila localmente:
 
 ```bash
@@ -56,8 +69,7 @@ El comando `get` te permite extraer valores de objetos o arrays de objetos.
 
 ```shell
 nxsh > users | get .name
-```
-**Salida:**
+```**Salida:**
 ```json
 [
   "Alice",
@@ -191,10 +203,6 @@ nxsh > originales | select .name .stargazers_count
     -   `[ ]` Añadir soporte para un archivo de configuración (`~/.nxshrc`).
 -   `[ ]` **Librería Estándar:**
     -   `[ ]` Expandir el conjunto de comandos internos para tareas comunes (archivos, red, etc.).
-
-## Contribuciones
-
-¡Las contribuciones son bienvenidas! Si tienes ideas, sugerencias o quieres reportar un bug, por favor abre un issue.
 
 ## Licencia
 
