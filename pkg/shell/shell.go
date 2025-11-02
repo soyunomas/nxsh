@@ -3,8 +3,8 @@ package shell
 import (
 	"encoding/json"
 	"fmt"
-	"nxsh/pkg/evaluator"
-	"nxsh/pkg/parser"
+	"github.com/soyunomas/nxsh/pkg/evaluator"
+	"github.com/soyunomas/nxsh/pkg/parser"
 	"os"
 	"strings"
 )

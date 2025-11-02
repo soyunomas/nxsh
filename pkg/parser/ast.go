@@ -3,7 +3,7 @@ package parser
 
 import (
 	"bytes"
-	// La línea "nxsh/pkg/types" ha sido eliminada
+	// La línea "github.com/soyunomas/nxsh/pkg/types" ha sido eliminada
 	"strings"
 )
 

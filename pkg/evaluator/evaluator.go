@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"nxsh/pkg/parser"
+	"github.com/soyunomas/nxsh/pkg/parser"
 	"os"
 	"os/exec"
 	"strconv"
