@@ -2,7 +2,7 @@
 package main
 
 import (
-	"nxsh/pkg/shell"
+	"github.com/soyunomas/nxsh/pkg/shell"
 )
 
 func main() {
