@@ -97,7 +97,9 @@ nxsh > users | get .location.city
 
 El comando `where` te permite filtrar un array de objetos basándote en una condición.
 
-**Ejemplo 1: Encontrar todos los usuarios que son "developer"**```shell
+**Ejemplo 1: Encontrar todos los usuarios que son "developer"**
+
+```shell
 nxsh > users | where .role == "developer"
 ```
 **Salida:**
