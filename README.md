@@ -129,7 +129,9 @@ El comando `select` te permite crear nuevos objetos, quedándote solo con los ca
 ```shell
 nxsh > users | select .name .role
 ```
-**Salida:**```json
+**Salida:**
+
+```json
 [
   { "name": "Alice", "role": "admin" },
   { "name": "Bob", "role": "developer" },
@@ -139,10 +141,13 @@ nxsh > users | select .name .role
 ```
 
 **Ejemplo 2: Combinar todo para obtener el nombre y la ciudad de los usuarios de USA**
+
 ```shell
 nxsh > users | where .location.country == "USA" | select .name .location.city
 ```
+
 **Salida:**
+
 ```json
 [
   { "name": "Alice", "city": "New York" },
